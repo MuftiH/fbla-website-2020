@@ -1,7 +1,12 @@
 /* TODO: FIX WEIRD SPACING WITH NAVBAR */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body, html {
     height: 100%;
+    font-weight: 400;
 }
 
 body {
@@ -11,7 +16,7 @@ body {
     color: #484848;
     background-color: #fff;
     margin: 0;
-    font-weight: 600;
+    font-weight: 400;
     height: 100%;
 }
 
@@ -25,7 +30,6 @@ footer {
     height: 60px;
     width: 100%;
     background-color: #484848;
-    
     text-align: center;
     font-weight: 400;
     display: flex;
@@ -53,10 +57,12 @@ footer a {
 
 .background-plane {
     background-image: url("https://images.unsplash.com/photo-1544016768-982d1554f0b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80");
-    height: 115%;
+    height: 95%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
 }
 
 .topnav {
@@ -103,7 +109,6 @@ footer a {
     transition: color 0.2s;
 }
 
-
 li a:hover {
     color: #ebeceeec
 }
@@ -129,13 +134,7 @@ ul li:first-child {
 .motto h1 {
     font-size: 36px;
     padding-top: 2em;
-}
-
-.fly-button {
-    cursor: pointer;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .title-about {
@@ -144,22 +143,36 @@ ul li:first-child {
     margin: auto;
     line-height: 1.5;
     padding: 4em 1em;
-    font-size: 20px;
-    font-weight: 550;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .title-about h2 {
-    font-size: 30px;
+    font-weight: 525;
+    font-size: 28px;
     margin-top: 1em;
     padding-top: 1em;
+    font-weight: 500;
 }
 
-.color-slope {
-    background: black;
-    width: 110%;
-    top: -5%;
-    left: -5%;
-    transform: rotate(2deg);
+.underline-1 {
+    text-decoration: underline solid #D3C1CD;
+}
+
+.underline-2 {
+    text-decoration: underline solid #c699a6;
+}
+
+.underline-3 {
+    text-decoration: underline solid #86505d;
+}
+
+.interested {
+    text-align: right;
+}
+
+.often {
+    text-align: center;
 }
 
 .icon {
@@ -172,7 +185,7 @@ ul li:first-child {
 
 .about-text {
     color: #484848 !important;
-    max-width: 38rem;
+    max-width: 60rem;
     margin: auto;
     line-height: 1.5;
     padding: 4em 1em;
@@ -186,7 +199,170 @@ ul li:first-child {
     padding-top: 1em;
 }
 
+.arrow-container {
+    text-align: center;
+}
 
+.btn-animate {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #86505d;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 14px;
+    width: 120px;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-animate span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+}
+
+.btn-animate span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.2s;
+}
+
+.btn-animate:hover span {
+    padding-right: 25px;
+}
+
+.btn-animate:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.focus {
+    font-weight: 600;
+    text-decoration: underline solid #c699a6 !important;
+}
+
+.flight-to {
+    width: 30px;
+}
+
+.flight-table {
+    padding-bottom: 50px;
+}
+
+.flight-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    background-color: #fff; 
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 0;
+    font-size: 18px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 0px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0px;
+}
+
+.length {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0px;
+}
+
+.card-btn {
+    flex: 1 1 0px;
+}
+
+.price {
+    flex: 1 1 0px;
+    font-weight: bold;
+    color: #c699a6;
+}
+
+.time {
+    font-weight: bold;
+}
+
+.book-heading {
+    padding-left: 10em;
+}
+
+.book-heading h2 {
+    font-size: 30px;
+    text-decoration: solid underline #D3C1CD;
+}
+
+.book-heading  p {
+    font-size: 18px;
+}
+
+.seattle-about{
+    position:absolute; 
+    top:0;
+    left:0;
+    z-index: -1;
+    width: 100vw;
+    overflow: hidden;
+    height: 20vw;
+    text-indent: -1040px;
+}
+
+.about-us-title {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+
+.who-about {
+    display: flex;
+    flex-direction: row;
+}
+
+.who-about h2 {
+    font-weight: 400;
+}
+
+.who-about img {
+    padding: 1em 2em;
+}
+
+.where-about {
+    float: right;
+    text-align: right;
+    margin-bottom: 10em;
+}
+
+.mission-about {
+    text-align: center;
+}
+
+/* .select-flight-btn {
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 6px; 
+} */
 
 #navHR {
     opacity: 0.5;
@@ -210,4 +386,12 @@ ul li:first-child {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
+}
+
+#down-arrow {
+    padding-top: 50px;
+    width: 15px;
+    height: auto;
+    display: inline-block;
+    z-index: 100;
 }
