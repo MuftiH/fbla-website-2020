@@ -1,5 +1,9 @@
 /* TODO: FIX WEIRD SPACING WITH NAVBAR */
 
+.topnav .icon {
+    display: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -13,7 +17,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     line-height: 1.43;
-    color: #484848;
+    color: #252525;
     background-color: #fff;
     margin: 0;
     font-weight: 400;
@@ -29,11 +33,11 @@ footer {
     bottom: 0;
     height: 60px;
     width: 100%;
-    background-color: #484848;
+    background-color: #252525;
     text-align: center;
     font-weight: 400;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-end;
 }
 
@@ -50,13 +54,26 @@ footer ul {
 footer a {
     display: block;
     text-align: center;
-    margin: 19px 21px;
     text-decoration: none;
     color: #fff;
+    margin: 10px 15px;
+}
+
+.normal-text {
+    max-width: 38rem;
+    padding: 2rem;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.normal-text h2 {
+    margin-top: 1em;
+    padding-top: 1em;
 }
 
 .background-plane {
-    background-image: url("https://images.unsplash.com/photo-1544016768-982d1554f0b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80");
+    background-image: url("assets/bgplane.jpg");
     height: 95%;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,7 +88,7 @@ footer a {
 
 .topnav ul {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-end;
     height: 100%;
     list-style-type: none;
@@ -91,7 +108,7 @@ footer a {
 
 .topnav-off ul {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-end;
     height: 100%;
     list-style-type: none;
@@ -102,7 +119,7 @@ footer a {
 
 .topnav-off li a {
     display: block;
-    color: #484848;
+    color: #252525;
     text-align: center;
     margin: 19px 21px;
     text-decoration: none;
@@ -124,6 +141,15 @@ ul li:first-child {
 .logo {
     font-weight: bold;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-text {
+    padding-left: 15px;
+    font-weight: 500;
+    color: rgb(207, 140, 160);
 }
 
 .motto {
@@ -138,7 +164,7 @@ ul li:first-child {
 }
 
 .title-about {
-    color: #484848 !important;
+    color: #252525 !important;
     max-width: 38rem;
     margin: auto;
     line-height: 1.5;
@@ -175,16 +201,8 @@ ul li:first-child {
     text-align: center;
 }
 
-.icon {
-    color: transparent;
-    background-color: #ec2930;
-    background-clip: text;
-    -webkit-background-clip: text;
-    width: 20px;
-}
-
 .about-text {
-    color: #484848 !important;
+    color: #252525 !important;
     max-width: 60rem;
     margin: auto;
     line-height: 1.5;
@@ -253,13 +271,13 @@ ul li:first-child {
 }
 
 .flight-table {
-    padding-bottom: 50px;
+    padding-bottom: 7.5vw;
 }
 
 .flight-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
-    background-color: #fff; 
+    background-color: #fff;
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -276,6 +294,11 @@ ul li:first-child {
     flex: 1 1 0px;
 }
 
+.airport-text {
+    color: #7c7b7b;
+    font-weight: normal;
+}
+
 .date {
     display: flex;
     flex-direction: column;
@@ -286,16 +309,45 @@ ul li:first-child {
     display: flex;
     flex-direction: column;
     flex: 1 1 0px;
+    font-weight: bold;
 }
 
 .card-btn {
     flex: 1 1 0px;
 }
 
+.select-flight-btn {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #aeafd9;
+    /* margin: 0 0.3em 0.3em 0; */
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #aeafd9;
+    text-align: center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.select-flight-btn:hover {
+    color: #000000;
+    background-color: #aeafd9;
+}
+
 .price {
     flex: 1 1 0px;
     font-weight: bold;
-    color: #c699a6;
+    color: green;
+}
+
+.sold {
+    flex: 1 1 0px;
+    font-weight: 400;
+    color: #252525;
+    text-decoration: line-through;
 }
 
 .time {
@@ -303,27 +355,48 @@ ul li:first-child {
 }
 
 .book-heading {
-    padding-left: 10em;
+    color: #fff;
+    max-width: 38rem;
+    margin: auto;
+    line-height: 1.5;
+    padding: 4em 1em;
 }
 
 .book-heading h2 {
     font-size: 30px;
+    font-weight: 500;
     text-decoration: solid underline #D3C1CD;
 }
 
-.book-heading  p {
+.book-heading p {
     font-size: 18px;
+    font-weight: 400;
 }
 
-.seattle-about{
-    position:absolute; 
-    top:0;
-    left:0;
-    z-index: -1;
-    width: 100vw;
-    overflow: hidden;
-    height: 20vw;
-    text-indent: -1040px;
+.about-background {
+    background-image: url("assets/seattle.jpg");
+    height: 95%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+
+.frequent-background {
+    background-image: url("https://images.unsplash.com/photo-1547737694-af7c0238463b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80");
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.apply-background {
+    background-image: url("https://images.unsplash.com/photo-1541917495-fa14ce13a157?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1187&q=80");
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about-us-title {
@@ -331,8 +404,6 @@ ul li:first-child {
     text-align: center;
     padding-top: 40px;
 }
-
-
 
 .who-about {
     display: flex;
@@ -357,12 +428,53 @@ ul li:first-child {
     text-align: center;
 }
 
+.frequent-title {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20vh;
+}
+
+.benefit-frequent h2 {
+    text-decoration: underline solid #c699a6;
+}
+
 /* .select-flight-btn {
     color: #0099CC;
     background: transparent;
     border: 2px solid #0099CC;
     border-radius: 6px; 
 } */
+
+.container {
+    padding: 16px;
+    max-width: 38em;
+    margin: 0 auto;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.footer-icon {
+    float: left;
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+#email-contact {
+    padding-bottom: 50vh;
+}
 
 #navHR {
     opacity: 0.5;
@@ -371,7 +483,7 @@ ul li:first-child {
     border-width: 1px;
     margin-right: 19px;
     margin-left: 19px;
-    margin-top: 0px;
+    margin-top: -15px;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
@@ -383,7 +495,7 @@ ul li:first-child {
     border-width: 1px;
     margin-right: 19px;
     margin-left: 19px;
-    margin-top: 0px;
+    margin-top: -15px;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
@@ -395,3 +507,74 @@ ul li:first-child {
     display: inline-block;
     z-index: 100;
 }
+
+#about-title {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10vw;
+    color: #fff;
+    font-size: 30px;
+}
+
+#what-frequent {
+    padding-bottom: 10vh;
+}
+
+#frequent-heading {
+    text-align: left;
+    font-weight: 400;
+    text-decoration: underline solid #c699a6;
+}
+
+#benefit-heading {
+    text-align: right;
+    font-weight: 400;
+    text-decoration: underline solid #D3C1CD;
+}
+
+#apply-title {
+    text-align: center;
+    margin-top: 10vw;
+    color: white;
+    font-size: 30px;
+}
+
+#apply-arrow {
+    margin-top: 10vw;
+}
+
+#core-values {
+    font-weight: 400;
+    text-decoration: underline solid #86505d;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        font-size: 8px;
+    }
+    .topnav li a {
+        font-size: 12px;
+    }
+    .topnav-off li a {
+        font-size: 12px;
+    }
+    .flight-card {
+        font-size: 11px;
+        padding: 10px auto;
+        width: 100vw !important;
+    }
+    .who-about {
+        display: block;
+        max-width: 30em;
+    }
+    .who-about img {
+        padding: 1em 2em;
+        width: 300px;
+        height: auto;
+    }
+    .footer-icon {
+        width: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {}

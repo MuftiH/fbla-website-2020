@@ -12,63 +12,91 @@
 </head>
 
 <body>
-    <div class="opener">
-        <div class="topnav-off">
+    <div class="about-background">
+        <div class="opener">
+            <div id="myTopNav" class="topnav-off">
 
-            <ul>
-                <li><a href="index.html" class="logo">Logo</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="book.html">Book Flights</a></li>
-                <li><a class="focus" href="about.html">About</a></li>
-                <li><a href="frequent.html">Horizon Flyers Program</a></li>
-                <li><a href="apply.html">Apply</a></li>
-            </ul>
+                <ul>
+                    <li><a href="index.html">
+                            <div class="logo"><img height=50 src="assets/logocut.png" alt=""><span
+                                    class="logo-text">Sunset
+                                    Airlines</span></div>
+                        </a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="book.html">Book Flights</a></li>
+                    <li><a class="focus" href="about.html">About</a></li>
+                    <li><a href="frequent.html">Horizon Flyers Program</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                </ul>
+            </div>
+
+            </nav>
+            <div id="navHR-off"></div>
+            <h2 id="about-title">About Us</h2>
         </div>
-
-        </nav>
-        <div id="navHR-off"></div>
-
+        <div class="arrow-container">
+            <a href="#whoAre">
+                <img src="assets/arrow-204-128.png" alt="" id="down-arrow">
+            </a>
+        </div>
     </div>
 
-    <div class="seattle-about">
-        <img src="assets/seattle.jpg" alt="">
-    </div>
-    <div class="about-us-title">
-        <h1>About Us</h1>
-    </div>
+
+
+
     <div class="about-text">
-        <h2>Who are we?</h2>
+        <h2 id="whoAre">Who are we?</h2>
         <div data-aos="fade-right" class="who-about">
-            <p>Sunset Air is a uniquely environmentally-focused local airline that runs in the Pacific Northwest. Sunset Air ensures that customers are guaranteed a high quality, yet affordable, travel experience. Sunset Air hopes to create magical and memorable moments for all families, with a vision to become one of the industry’s leading providers of excellent airline services.</p>
-            <img height=400 width=auto src="assets/seattle-who.jpg" alt="">
+            <p>Sunset Air is a uniquely environmentally-focused local airline that runs in the Pacific Northwest. Sunset
+                Air ensures that customers are guaranteed a high quality, yet affordable, travel experience. Sunset Air
+                hopes to create magical and memorable moments for all families, with a vision to become one of the
+                industry’s leading providers of excellent airline services.</p>
+            <img id="seattle-about-img" height=400 width=auto src="assets/seattle-who.jpg" alt="">
         </div>
 
+        <h2>Where do we come from?</h2>
         <div data-aos="fade-left" class="where-about">
-            <h2>Where do we come from?</h2>
-            <p>The founders originally established Sunset Air in Seattle, Washington with hopes of providing an affordable alternative to expensive tickets after noticing decreasing incomes in their hometown. That, coupled with their efforts to improve the world’s mounting environmental issues, led to the founding of one of the safest, most environmentally-aware airline companies in the Pacific Northwest.</p>
+
+            <p>The founders originally established Sunset Air in Seattle, Washington with hopes of providing an
+                affordable alternative to expensive tickets after noticing decreasing incomes in their hometown. That,
+                coupled with their efforts to improve the world’s mounting environmental issues, led to the founding of
+                one of the safest, most environmentally-aware airline companies in the Pacific Northwest.</p>
         </div>
 
-        <div data-aos="zoom-in-right" class="mission-about">
-            <h2>How do we give back?</h2>
-            <p>Sunset Air has always highly valued the importance of decreasing one’s carbon footprint in our everyday lifestyles. Average airplanes produce more than 50 pounds of carbon dioxide for every mile and Sunset Air has always strived to reduce such a detrimental effect on the globe. Our paper straws, biodegradable napkins, bamboo cups, and biofuel, as well as solar panels, are just a few instances of how we remain committed to minimizing the negative impact on the environment. Sunset Air promotes the benefits of reducing pollution while inspiring others to join globally beneficial endeavors.</p>
+        <h2>How do we give back?</h2>
+        <div data-aos="fade-up" class="mission-about">
+            <p>Sunset Air has always highly valued the importance of decreasing one’s carbon footprint in our everyday
+                lifestyles. Average airplanes produce more than 50 pounds of carbon dioxide for every mile and Sunset
+                Air has always strived to reduce such a detrimental effect on the globe. Our paper straws, biodegradable
+                napkins, bamboo cups, and biofuel, as well as solar panels, are just a few instances of how we remain
+                committed to minimizing the negative impact on the environment. Sunset Air promotes the benefits of
+                reducing pollution while inspiring others to join globally beneficial endeavors.</p>
         </div>
 
     </div>
 
     <footer>
         <ul>
-            <li><a href="">LOGO</a></li>
-            <li><a href="">PRIVACY POLICY</a></li>
-            <li><a href="">CREDITS</a></li>
-            <li><a href="">TERMS AND CONDITIONS</a></li>
-            <!-- TODO: ADD ICONS -->
-            <!-- <li class="icon"><a href=""><img src="assets/instagram.png" alt=""></a></li>
-            <li class="icon"><a href=""><img src="assets/facebook-logo.png" alt=""></a></li>
-            <li class="icon"><a href=""><img src="assets/tik-tok.png" alt=""></a></li>
-            <li class="icon"><a href=""><img src="assets/twitter.png" alt=""></a></li> -->
+            <li><a href="#">
+                <div class="footer-icon"><img height=30 src="assets/tik-tok.png" alt=""></div>
+            </a></li>
+            <li><a href="#">
+                <div class="footer-icon"><img height=30 src="assets/facebook-logo.png" alt=""></div>
+            </a></li>
+            <li><a href="#">
+                <div class="footer-icon"><img height=30 src="assets/instagram.png" alt=""></div>
+            </a></li>
+            <li><a href="#">
+                <div class="footer-icon"><img height=30 src="assets/twitter.png" alt=""></div>
+            </a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="credits.html">CREDITS</a></li>
+            <li><a href="terms.html">TERMS AND CONDITIONS</a></li>
+
         </ul>
     </footer>
 
+    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

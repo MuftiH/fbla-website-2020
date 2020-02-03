@@ -11,48 +11,89 @@
 </head>
 
 <body>
-    <div class="opener">
-        <div class="topnav-off">
+    <div class="apply-background">
+        <div class="opener">
+            <div id="myTopNav" class="topnav">
 
-            <ul>
-                <li><a href="index.html" class="logo">Logo</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="book.html">Book Flights</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="frequent.html">Horizon Flyers Program</a></li>
-                <li><a class="focus" href="apply.html">Apply</a></li>
-            </ul>
+                <ul>
+                    <li><a href="index.html">
+                            <div class="logo"><img height=50 src="assets/logocut.png" alt=""><span
+                                    class="logo-text">Sunset Airlines</span></div>
+                        </a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="book.html">Book Flights</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="frequent.html">Horizon Flyers Program</a></li>
+                    <li><a class="focus" href="apply.html">Apply</a></li>
+                </ul>
+            </div>
+
+            </nav>
+            <div id="navHR"></div>
+
         </div>
-
-        </nav>
-        <div id="navHR-off"></div>
-
+        <h1 id="apply-title">Join our team today</h1>
+        <div id="apply-arrow" class="arrow-container">
+            <a href="#core-values">
+                <img src="assets/arrow-204-128.png" alt="" id="down-arrow">
+            </a>
+        </div>
     </div>
+
     <div class="about-text">
-        <h1>Join our team</h1>
-        <h2>What we're looking for</h2>
-        <p>[BRAND NAME] is always looking to expand its team. That's why, if you're a bright, ambitious individual
-            looking for a rewarding and challening career, [BRAND NAME] is the perfect place for you</p>
-        <h2>Vacant positions</h2>
-        <p>We currently have a plethora of possible positions for newcomers to our organization. Notably, flight
-            attendants and other faculty in the airport.</p>
+        <h2 id="core-values">What we're looking for</h2>
 
-        <h1>Interested?</h1>
-        <a href="">Apply here</a>
+
+        <p>We’re looking for bright, young individuals that are ambitious about saving the environment and that will
+            follow our core values that include safety, courtesy, innovation, and efficiency. Exhibiting these traits
+            will encompass the ideal Sunset Air staff and ensure an enjoyable experience for both those working and
+            traveling.</h2>
+            <p>We currently have a plethora of possible positions for newcomers to our organization. Notably, flight
+                attendants and other faculty in the airport. Please take the time to fill out the form below if you're
+                interested.</p>
     </div>
+
+    <form=>
+        <div class="container">
+            <h1>Interested?</h1>
+            <p>Please fill in this form to let us know you're interested</p>
+            <hr>
+
+            <label><b>Name</b></label>
+            <input id="name-input" type="text" placeholder="John Doe" name="name" required>
+
+            <label><b>Email</b></label>
+            <input id="email-input" type="text" placeholder="example@blank.com" name="email" required>
+
+            <label><b>Phone Number</b></label>
+            <input id="phone-input" type="text" placeholder="(XXX-XXX-XXXX)" name="phone-number" required>
+            <hr>
+
+            <button type="submit" class="btn-animate" onClick="submitForm()"><span>Register</span></button>
+        </div>
+    </form>
     <footer>
         <ul>
-            <li><a href="">LOGO</a></li>
-            <li><a href="">PRIVACY POLICY</a></li>
-            <li><a href="">CREDITS</a></li>
-            <li><a href="">TERMS AND CONDITIONS</a></li>
-            <!-- TODO: ADD ICONS -->
-            <!-- <li class="icon"><a href=""><img src="assets/instagram.png" alt=""></a></li>
-            <li class="icon"><a href=""><img src="assets/facebook-logo.png" alt=""></a></li>
-            <li class="icon"><a href=""><img src="assets/tik-tok.png" alt=""></a></li>
-            <li class="icon"><a href=""><img src="assets/twitter.png" alt=""></a></li> -->
+            <li><a href="#">
+                <div class="footer-icon"><img height=30 src="assets/tik-tok.png" alt=""></div>
+            </a></li>
+            <li><a href="#">
+                <div class="footer-icon"><img height=30 src="assets/facebook-logo.png" alt=""></div>
+            </a></li>
+            <li><a href="#">
+                <div class="footer-icon"><img height=30 src="assets/instagram.png" alt=""></div>
+            </a></li>
+            <li><a href="#">
+                <div class="footer-icon"><img height=30 src="assets/twitter.png" alt=""></div>
+            </a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="credits.html">CREDITS</a></li>
+            <li><a href="terms.html">TERMS AND CONDITIONS</a></li>
+
         </ul>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
