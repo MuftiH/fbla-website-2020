@@ -384,7 +384,7 @@ ul li:first-child {
 }
 
 .frequent-background {
-    background-image: url("https://images.unsplash.com/photo-1547737694-af7c0238463b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80");
+    background-image: url("assets/horizon-bg.jpg");
     height: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -392,7 +392,7 @@ ul li:first-child {
 }
 
 .apply-background {
-    background-image: url("https://images.unsplash.com/photo-1541917495-fa14ce13a157?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1187&q=80");
+    background-image: url("assets/apply-bg.jpg");
     height: 80%;
     background-position: center;
     background-repeat: no-repeat;
