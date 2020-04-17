@@ -115,4 +115,6 @@ function submitTestimonial() {
     let testimonials = document.querySelector(".testimonial");
     testimonials.appendChild(testimonial);
 
+    document.querySelector("#testimonial-text").value = "";
+    document.querySelector("#testimonial-name").value = "";
 }
