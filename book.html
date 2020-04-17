@@ -26,7 +26,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="frequent.html">Solar Flyers Program</a></li>
                     <li><a href="apply.html">Apply</a></li>
-                    <li ><a href="#" id="login-header" onclick="checkLogout()">LOGIN/SIGN UP</a></li>
+                    <li><a href="#" id="login-header" onclick="checkLogout()">LOGIN/SIGN UP</a></li>
                 </ul>
             </div>
 
@@ -36,14 +36,37 @@
         </div>
 
         <div class="book-heading">
-            <h2>Book flights with Sunset Air</h2>
-            <p>With just the click of a button, you can easily book flights with Sunset Air from the next 7 days </p>
+            <div>
+                <h2>Book flights with Sunset Air</h2>
+                <p>With just the click of a button, you can easily book flights with Sunset Air from the next 7 days
+                </p>
+            </div>
+            <div class="map-card">
+                <h3>Where we fly</h3>
+                <img src="./assets/destinationmap.png" alt="">
+            </div>
+
         </div>
 
         <!-- Washington to Oregon, Washington to Idaho, Washington to Montana, Oregon to Idaho, Oregon to Montana, Idaho to Montana  -->
 
 
         <div class="flight-table">
+            <div class="flight-card underline-2">
+                <div class="location">Destination
+                </div>
+                <div class="date">
+                    <span class="day">Date</span>
+                </div>
+                <div class="length" id="length-heading" >
+                    <span>Length / Airport</span>
+                </div>
+                <div class="card-btn">
+                    <span>Select</span>
+                </div>
+                <div class="price" id="price-heading">Price</div>
+            </div>
+
             <div class="flight-card">
                 <div class="location">WA
                     <img class="flight-to" src="assets/airplane.svg" alt=""> OR

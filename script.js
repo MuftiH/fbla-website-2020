@@ -103,3 +103,16 @@ function submitLogin() {
 function submitRegister() {
     alert("Thank you for registering! Now please login below.")
 }
+
+function submitTestimonial() {
+    let testimonialText = document.querySelector("#testimonial-text").value;
+    let testimonialName = document.querySelector("#testimonial-name").value;
+
+
+    let testimonial = document.createElement("p");
+    testimonial.textContent = testimonialText+ ". -" + testimonialName;
+
+    let testimonials = document.querySelector(".testimonial");
+    testimonials.appendChild(testimonial);
+
+}
