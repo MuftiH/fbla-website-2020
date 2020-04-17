@@ -1,0 +1,107 @@
+<!-- TODO:
+    [x] Make login card
+    [x] Make sign up card
+    [x] Add code to login card
+    [x] Add code to register card
+    [x] Fix title orientation -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Sunset Air | Login</title>
+</head>
+
+<body>
+    <div class="login-background">
+        <div class="opener">
+            <div id="myTopNav" class="topnav">
+
+                <ul>
+                    <li><a href="index.html">
+                            <div class="logo"><img height=50 src="assets/actuallogo.png" alt=""><span
+                                    class="logo-text">Sunset Airlines</span></div>
+                        </a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="book.html">Book Flights</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="frequent.html">Solar Flyers Program</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                    <li ><a href="#" class="focus" id="login-header" onclick="checkLogout()">LOGIN/SIGN UP</a></li>
+                </ul>
+            </div>
+
+            </nav>
+            <div id="navHR"></div>
+
+        </div>
+        <h1 id="login-title">Login or Register Below</h1>
+        <div id="login-arrow" class="arrow-container">
+            <a href="#signInForm">
+                <img src="assets/arrow-204-128.png" alt="" id="down-arrow">
+            </a>
+        </div>
+    </div>
+
+    <div class="login-forms">
+        <form id="signInForm">
+        <div class="container">
+            <h1>Login</h1>
+            <hr>
+
+            <label><b>Username</b></label>
+            <input id="username-login" type="text" placeholder="Username" name="usernameLogin" required>
+
+            <label><b>Password</b></label>
+            <input id="password-login" type="password" placeholder="Password" name="passwordLogin" required>
+
+            <button type="submit" class="btn-animate" onClick="submitLogin()" id="signInButton"><span>Login</span></button>
+        </div>
+        </form>
+
+        <form>
+        <div class="container">
+            <h1>Register</h1>
+            <hr>
+
+            <label><b>Username</b></label>
+            <input id="username-register" type="text" placeholder="Username" name="usernameRegister" required>
+
+            <label><b>Password</b></label>
+            <input id="password-register" type="password" placeholder="Password" name="passwordRegister" required>
+
+            <button type="submit" class="btn-animate" onClick="submitRegister()"><span>Register</span></button>
+        </div>
+        </form>
+    </div>
+    
+        <footer>
+            <ul>
+                <li><a href="#">
+                        <div class="footer-icon"><img height=30 src="assets/tik-tok.png" alt=""></div>
+                    </a></li>
+                <li><a href="#">
+                        <div class="footer-icon"><img height=30 src="assets/facebook-logo.png" alt=""></div>
+                    </a></li>
+                <li><a href="#">
+                        <div class="footer-icon"><img height=30 src="assets/instagram.png" alt=""></div>
+                    </a></li>
+                <li><a href="#">
+                        <div class="footer-icon"><img height=30 src="assets/twitter.png" alt=""></div>
+                    </a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="credits.html">CREDITS</a></li>
+                <li><a href="terms.html">TERMS AND CONDITIONS</a></li>
+
+            </ul>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
