@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
+
     <!-- TODO: Fill in with airline name -->
     <title>Sunset Air | Welcome</title>
 </head>
@@ -16,12 +18,17 @@
         <div id="myTopNav" class="topnav">
 
             <ul>
-                <li><a href="index.html"><div class="logo"><img height=50 src="assets/actuallogo.png" alt=""><span class="logo-text">Sunset Airlines</span></div></a></li>
+                <li><a href="index.html">
+                        <div class="logo"><img height=50 src="assets/actuallogo.png" alt=""><span
+                                class="logo-text">Sunset Airlines</span></div>
+                    </a></li>
                 <li><a class="focus" href="index.html">Home</a></li>
                 <li><a href="book.html">Book Flights</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="frequent.html">Solar Flyers Program</a></li>
                 <li><a href="apply.html">Apply</a></li>
+                <li><a href="#" id="login-header" onclick="checkLogout()">LOGIN/SIGN UP</a></li>
+
             </ul>
         </div>
 
@@ -31,7 +38,9 @@
 
         <div class="motto">
             <div class="slogan">
-                <h1>Fly Friendly.<br>Fly Fair.<br>Fly Fast.</h1>
+                <h1><span id="added-text">
+                    An <span class="airline-underline">airline</span> that lets you<br>
+                </span>Fly Friendly.<br>Fly Fair.<br>Fly Fast.</h1>
             </div>
             <div class="btn-animate" onclick="window.location.href = 'book.html';"><span>Book now</span></div>
         </div>
@@ -52,44 +61,58 @@
     </div> -->
 
     <div class="title-about">
-        <div>
-            <h2 id="who" class="underline-1">Who we are</h2>
-            <p>Sunset Airlines is a Pacific Northwest-focused airline with the goal of delivering our customers
-                quick and economical transportation throughout the whole Pacific Northwest, all at a low cost, while being uniquely environmentally-focused.
-            </p>
-            </p><a href="about.html">Read more</a>
+        <h2 id="who" class="underline-1">Who we are</h2>
+        <div class="who">
+            <div class="who-text-stuff">
+                <p>Sunset Airlines is a Pacific Northwest-focused airline with the goal of delivering our customers
+                    quick and economical transportation throughout the whole Pacific Northwest, all at a low cost, while
+                    being uniquely environmentally-focused.
+                </p>
+                </p><a href="about.html">Read more</a>
+
+            </div>
+            <a id="who-icon" href="about.html"><img id="who-img" src="./assets/whoweareicon.png" alt="" width=250></a>
         </div>
 
+        <h2 class="underline-2 right">Interested in joining?</h2>
         <div class="interested">
-            <h2 class="underline-2">Interested in joining?</h2>
-            <p>At Sunset Airlines, we're always looking for ways to expand our team with more bright, talented individuals.
-                To see if Sunset Airlines is the right fit for you:
-            </p>
-            <a href="apply.html">Click here</a>
+            <a href="apply.html"><img id="interested-img" src="./assets/interestedinjoiningicon.png" alt=""
+                    width=250></a>
+            <div>
+                <p>At Sunset Airlines, we're always looking for ways to expand our team with more bright, talented
+                    individuals.
+                    To see if Sunset Airlines is the right fit for you:
+                </p>
+                <a href="apply.html">Click here</a>
+            </div>
         </div>
 
+        <h2 class="underline-3 center">Fly often?</h2>
         <div class="often">
-            <h2 class="underline-3">Fly often?</h2>
-            <p>At Sunset Airlines, we're always looking for ways to reward our most loyal customers. This is why we devised
-                our Solar Flyers program to give the most power to who deserves it most.</p>
-            <p>Join our <a href="frequent.html">frequent flyer program</a> today</p>
+            <div>
+                <p>At Sunset Airlines, we're always looking for ways to reward our most loyal customers. This is why we
+                    devised
+                    our Solar Flyers program to give the most power to who deserves it most.</p>
+                <p>Join our <a href="frequent.html">frequent flyer program</a> today</p>
+            </div>
+            <a href="frequent.html"><img id="often-img" src="./assets/flyoftenicon.png" alt="" width=250></a>
         </div>
     </div>
 
     <footer>
         <ul>
             <li><a href="#">
-                <div class="footer-icon"><img height=30 src="assets/tik-tok.png" alt=""></div>
-            </a></li>
+                    <div class="footer-icon"><img height=30 src="assets/tik-tok.png" alt=""></div>
+                </a></li>
             <li><a href="#">
-                <div class="footer-icon"><img height=30 src="assets/facebook-logo.png" alt=""></div>
-            </a></li>
+                    <div class="footer-icon"><img height=30 src="assets/facebook-logo.png" alt=""></div>
+                </a></li>
             <li><a href="#">
-                <div class="footer-icon"><img height=30 src="assets/instagram.png" alt=""></div>
-            </a></li>
+                    <div class="footer-icon"><img height=30 src="assets/instagram.png" alt=""></div>
+                </a></li>
             <li><a href="#">
-                <div class="footer-icon"><img height=30 src="assets/twitter.png" alt=""></div>
-            </a></li>
+                    <div class="footer-icon"><img height=30 src="assets/twitter.png" alt=""></div>
+                </a></li>
             <li><a href="contact.html">CONTACT US</a></li>
             <li><a href="credits.html">CREDITS</a></li>
             <li><a href="terms.html">TERMS AND CONDITIONS</a></li>

@@ -1,3 +1,31 @@
+window.onload = function () {
+    // maybe remove "this"
+    if (this.localStorage.username) {
+        let element = this.document.querySelector("#login-header");
+        element.textContent = localStorage.username + " / LOGOUT";
+        element.style.color = "#1558bd";
+    }
+}
+
+function playDing() {
+    var audio = new Audio('./assets/ding.mp3');
+    audio.play();
+}
+
+function checkLogout() {
+    let element = this.document.querySelector("#login-header");
+    let elementText = element.textContent;
+    if (elementText.includes("LOGOUT")) {
+        if (localStorage.username) {
+            localStorage.clear();
+        }
+        element.textContent = "Login / Register"
+        window.location.href = "index.html";
+    } else {
+        window.location.href = "login.html"
+    }
+}
+
 function toggle() {
 
     var body = document.body;
@@ -11,6 +39,7 @@ function toggle() {
 }
 
 function book(element) {
+    playDing(); 
     alert("Flight Confirmed!");
     element.classList.add("sold");
     element.classList.toggle("price");
@@ -18,32 +47,32 @@ function book(element) {
 
 function book101() {
     let element = document.getElementById("101");
-    book(element); 
+    book(element);
 }
 
 function book103() {
     let element = document.getElementById("103");
-    book(element); 
+    book(element);
 }
 
 function book195() {
     let element = document.getElementById("195");
-    book(element); 
+    book(element);
 }
 
 function book135() {
     let element = document.getElementById("135");
-    book(element); 
+    book(element);
 }
 
 function book185() {
     let element = document.getElementById("185");
-    book(element); 
+    book(element);
 }
 
 function book260() {
     let element = document.getElementById("260");
-    book(element); 
+    book(element);
 }
 
 function submitForm() {
@@ -59,9 +88,18 @@ function submitForm() {
 function myFunction() {
     var x = document.getElementById("myTopNav");
     if (x.className === "topnav") {
-      x.className += " responsive";
+        x.className += " responsive";
     } else {
-      x.className = "topnav";
+        x.className = "topnav";
     }
-  }
+}
 
+function submitLogin() {
+    let usernameInput = document.getElementById("username-login").value;
+    localStorage.username = usernameInput;
+    window.location.replace("index.html");
+}
+
+function submitRegister() {
+    alert("Thank you for registering! Now please login below.")
+}
