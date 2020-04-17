@@ -201,6 +201,14 @@ ul li:first-child {
     text-align: right;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+.interested p {
+    padding-left: 50px;
+}
+
+.interested-heading {
+    margin-bottom: -30px;
 }
 
 .often {
@@ -424,7 +432,9 @@ ul li:first-child {
 .who {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
+
 
 .who-about {
     display: flex;
@@ -663,6 +673,10 @@ input[type=text]:focus, input[type=password]:focus {
     font-weight: normal;
 }
 
+#who {
+    margin-bottom: -30px;
+}
+
 @media screen and (max-width: 600px) {
     footer {
         font-size: 9px;
@@ -722,5 +736,17 @@ input[type=text]:focus, input[type=password]:focus {
     }
     .map-card img {
         width: 310px;
+    }
+    .where-about {
+    flex-direction: column;
+    }
+    .where-about img {
+        height: 125px;
+    }
+    .interested-heading {
+        margin-bottom: 0px;
+    }
+    #who {
+        margin-bottom: 0px;
     }
 }
