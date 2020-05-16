@@ -6,7 +6,7 @@ window.onload = function () {
         element.style.color = "#1558bd";
     }
 }
-// eee
+// eee 
 function playDing() {
     var audio = new Audio('./assets/ding.mp3');
     audio.play();
